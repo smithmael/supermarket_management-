@@ -22,6 +22,26 @@ A modern, full-stack Point of Sale (POS) and inventory management application de
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
-   cd supermarket-pos
+   git clone https://github.com/smithmael/supermarket_management-.git
+   cd supermarket_management
+2. Install dependencies:
+   npm install
+
+3. Configure Environment:
+Create a .env file in the root directory and set your DATABASE_URL and JWT_SECRET.
+
+4. Setup Server:
+cd server
+npm install
+# Ensure your .env is configured
+npx prisma db push
+# Start the server
+npx tsx server.ts
+
+
+5.  Initialize Database:
+npx prisma db push
+
+6. Start the app:
+npm run dev
 
